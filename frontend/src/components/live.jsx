@@ -37,6 +37,7 @@ import photo30 from "../assets/media/slider-photo-30.jpg";
 const Live = () =>
 
 {
+
   const [show, setShow] = useState(false);
 const handleClose = () => setShow(false);
 const handleCloseAlert = () => {
@@ -94,7 +95,7 @@ const handleShow = () => setShow(true)
           </Button>
         </Modal.Footer>
       </Modal>
-      <ToastContainer theme='light' position='bottom-right'/>
+      {/* <ToastContainer theme='light' position='bottom-right'/> */}
     <div className="buttons-container">
       <Button variant='transparent' className='live-btn'>
         Все

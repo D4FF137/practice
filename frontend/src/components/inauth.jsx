@@ -18,7 +18,7 @@ const Inauth = () =>{
                     <h4>Фамилия: </h4>
                     <h4>Паспортные данные: </h4>
                     <Button onClick={toastify} variant='success' className='p-2'>Изменить данные</Button>
-                    <ToastContainer theme='light' position='bottom-right'/>
+                    {/* <ToastContainer theme='light' position='bottom-right'/> */}
                 </div>
             </div>
             <div className='history'>

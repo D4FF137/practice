@@ -14,30 +14,28 @@
 .nav{
   font-family: var(--main-font)
 }
+.swit:hover{
+  color: #3232;
+}
 .swit:nth-child(5){
   margin-left: 90%;
 }
 .main-screen-full{
-  background: #000;
-  height: 100%;
-  z-index: -99;
+  /* background: #000;
+  height: 100%; */
 }
+
 .videoTag{
-  object-fit: cover;
   width: 100%;
-  height: 100%;
-  position: absolute;
+   height: 900px;
+   object-fit: cover;
+   position: absolute;
   top: 0;
-  left:0;
- opacity: 0.5; 
- z-index: 1;
+  left: 0;
+   opacity: 1;
+   z-index: -1;
 }
-.main-screen{
-  z-index: 999;
-}
-.main-screen-full{
-  z-index: 999;
-}
+
 .nav{
   z-index: 999;
 }
@@ -45,7 +43,7 @@
   padding-top: 60px;
 }
 .main-screen-top h1{
-  width: 877px;
+  /* width: 877px; */
   font-size: 100px;
   font-weight: 300;
 }
@@ -58,6 +56,7 @@
   padding: 15px;
   background: transparent;
   font-size: 20px;
+  -webkit-transition: 0.5s ease;
 }
 .main-screen-button1:hover{
   background-color: #fff;
@@ -67,7 +66,7 @@
 .main-screen-button2{
   background: transparent;
   padding: 10px;
-
+  -webkit-transition: 0.5s ease;
 }
 .main-screen-button2:hover{
   background-color: #fff;
@@ -78,7 +77,7 @@
   display: flex;
   gap: 30px;
   padding-top: 50px;
-  padding-bottom: 115px;
+  padding-bottom: 200px;
 }
 .about{
   display: flex;
@@ -587,4 +586,116 @@ font-weight: 300;
 .dob{
   padding-top: 430px;
   padding-left: 50px;
+}
+
+
+@media(max-width: 768px) {
+  .about{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .about-left{
+    text-align: center;
+  }
+  .about .about-right img{
+    width: 500px;
+    height: 500px;
+    
+  }
+  .life{
+    text-align: center;
+  }
+  .buttons{
+    text-align: center;
+    padding-left: 140px;
+  }
+  .promotions{
+    text-align: center;
+  }
+  .promotionsrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .advantages h1{
+    text-align: center;
+  }
+  .advantages-column{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .advantages-column h4{
+    padding-bottom: 10px;
+  }
+  .footer-content{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-content .footer-left{
+   padding-left: 240px;
+   padding-bottom: 40px;
+  }
+  .footer-right{
+    padding-bottom: 40px;
+  }
+  .swit:nth-child(5){
+    margin-left: 0%;
+    margin-top: 20px;
+  }
+  .videoTag{
+    height: 1010px;
+  }
+  .main-screen-top h1{
+    font-size: 70px;
+  }
+  .main-screen-top p{
+    font-size: 20px;
+  }
+  .main-screen-buttons{
+    padding-bottom: 300px;
+  }
+}
+@media(max-width: 375px) {
+  .main-screen-top h1{
+    font-size: 40px;
+  }
+  .main-screen-top p{
+    font-size: 15px;
+  }
+  .main-screen-button1, .main-screen-button2{
+    padding:5px;
+    font-size: 15px;
+  }
+  .about .about-right img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 0px;
+  }
+  .life h1, .advantages h1, .promotions h1{
+    font-size: 40px;
+  }
+  .life h2, .promotions h2{
+    font-size: 20px;
+  }
+  .life .buttons{
+    padding-left: 0px;
+  }
+  .footer-content .footer-left{
+    padding-left: 45px;
+  }
+  .footer-content .footer-right h1{
+    font-size: 30px;
+  }
+  .main-screen-buttons{
+    padding-top: 70px;
+  }
+  .buttons-container{
+  
+    flex-wrap: wrap;
+  }
+  .videoTag{
+    height: 100%;
+  }
+
 }

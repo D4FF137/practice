@@ -118,7 +118,7 @@ const live_navigate = () =>{
           </Button>
         </Modal.Footer>
       </Modal>
-      <ToastContainer theme='light' position='bottom-right'/>
+      {/* <ToastContainer theme='light' position='bottom-right'/> */}
             </Col>
             <Col >
               <Button onClick={live_navigate}>Все номера</Button>
@@ -186,7 +186,7 @@ const live_navigate = () =>{
         <section className="promotions">
       <h1>Акции</h1>
       <h2>Позволят насладиться отдыхом и оздоровлением по привлекательным ценам</h2>
-      <Row className="gap-4" md={2}>
+      <Row className="gap-4 promotionsrow" md={2} >
         <Col  className="promotionscol">
         <img src={promotion1} alt="" />
     <h5>
@@ -287,7 +287,7 @@ const live_navigate = () =>{
         <section className="promotions">
       <h1>Каждый найдет занятие по душе</h1>
       <h2>Позволят насладиться отдыхом и оздоровлением по привлекательным ценам</h2>
-      <Row className="gap-4" md={2}>
+      <Row className="gap-4 promotionsrow" md={2} >
         <Col  className="promotionscol tel">
         {/* <img src={promotion1} alt="" /> */}
     <h5>

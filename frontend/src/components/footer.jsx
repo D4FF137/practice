@@ -37,7 +37,7 @@ const Footer = () =>{
  
       <Form.Control className='pole1' type='email' placeholder='Введите Email'></Form.Control>
       <Button variant='primary' className="knopka"  onClick={notify}>Отправить</Button>
-    <ToastContainer theme='dark' position='bottom-right'/>
+    {/* <ToastContainer theme='dark' position='bottom-right'/> */}
     </Form>
 
     </div>

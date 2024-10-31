@@ -19,6 +19,9 @@ const Header = observer(()=>{
         navigate('/');
         toast.info('Вы вышли с аккаунта!')
     }
+    const allinclusive = () => {
+        navigate('/live')
+    }
   
       
       
@@ -26,7 +29,7 @@ const Header = observer(()=>{
     return (
         
         <div className='main-screen-full'>
-          <div> <video className='videoTag' autoPlay loop muted><source src={bg} type='video/mp4'></source></video></div>
+             <video className='videoTag' autoPlay loop muted><source src={bg} type='video/mp4'></source></video>
         <section>
             {/* Навигационная панель */}
         <Navbar expand='lg' bg='' variant='' className='nav '>
@@ -56,7 +59,7 @@ const Header = observer(()=>{
         </div>
         <div className="main-screen-buttons">
            <Button className='main-screen-button1'>Рассчитать стоимость</Button>
-           <Button className='main-screen-button2'>Все включено</Button>
+           <Button className='main-screen-button2' onClick={allinclusive}>Все включено</Button>
         </div>
         </div>
         </section>
@@ -65,7 +68,7 @@ const Header = observer(()=>{
         </section>
       
       
-       
+        
       </div>
     );
 })
