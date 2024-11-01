@@ -1,85 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&display=swap');
-:root{
-  --main-font: 'Montserrat', sans-serif;
-  --second-font: 'Oranienbaum', sans-serif;
-  --blue: #4F6FED
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&display=swap");
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Oranienbaum", sans-serif;
+  --blue: #4f6fed;
 }
-.container{
+/* главная страница */
+.container {
   max-width: 1570px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
 }
 
-.nav{
-  font-family: var(--main-font)
+.nav {
+  font-family: var(--main-font);
 }
-.swit:hover{
+.swit:hover {
   color: #3232;
 }
-.swit:nth-child(5){
+.swit:nth-child(5) {
   margin-left: 90%;
 }
-.main-screen-full{
-  /* background: #000;
-  height: 100%; */
-}
 
-.videoTag{
+.videoTag {
   width: 100%;
-   height: 900px;
-   object-fit: cover;
-   position: absolute;
+  height: 900px;
+  object-fit: cover;
+  position: absolute;
   top: 0;
   left: 0;
-   opacity: 1;
-   z-index: -1;
+  opacity: 1;
+  z-index: -1;
 }
 
-.nav{
+.nav {
   z-index: 999;
 }
-.main-screen-top{
+.main-screen-top {
   padding-top: 60px;
 }
-.main-screen-top h1{
+.main-screen-top h1 {
   /* width: 877px; */
   font-size: 100px;
   font-weight: 300;
 }
-.main-screen-top p{
+.main-screen-top p {
   padding-top: 40px;
   font-size: 30px;
   font-weight: 300;
 }
-.main-screen-button1{
+.main-screen-button1 {
   padding: 15px;
   background: transparent;
   font-size: 20px;
   -webkit-transition: 0.5s ease;
 }
-.main-screen-button1:hover{
+.main-screen-button1:hover {
   background-color: #fff;
   color: #000;
   transition: 0.5s;
 }
-.main-screen-button2{
+.main-screen-button2 {
   background: transparent;
   padding: 10px;
   -webkit-transition: 0.5s ease;
 }
-.main-screen-button2:hover{
+.main-screen-button2:hover {
   background-color: #fff;
   color: #000;
   transition: 0.5s;
 }
-.main-screen-buttons{
+.main-screen-buttons {
   display: flex;
   gap: 30px;
   padding-top: 50px;
   padding-bottom: 200px;
 }
-.about{
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,45 +84,46 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.about .about-left h3{
-    font-size: 30px;
-    font-family: var(--second-font);
-    color: var(--blue);
+.about .about-left h3 {
+  font-size: 30px;
+  font-family: var(--second-font);
+  color: var(--blue);
 }
-.about .about-left h2{
+.about .about-left h2 {
   font-size: 40px;
   font-weight: 300;
   font-family: var(--main-font);
   padding-top: 53px;
   padding-bottom: 35px;
 }
-.about .about-left p{
+.about .about-left p {
   font-size: 20px;
   font-weight: 300;
   font-family: var(--main-font);
   padding-top: 50px;
 }
-.about .about-right img{
+.about .about-right img {
   width: 700px;
   height: 819px;
   border-radius: 10px;
 }
-.about Button{
-  
+.about Button {
   padding: 20px 50px 20px 50px;
   margin-top: 40px;
   font-family: var(--main-font);
 }
-.life{
+.life {
   padding-bottom: 200px;
   padding-top: 200px;
 }
-.life h1, .promotions h1{
+.life h1,
+.promotions h1 {
   font-family: var(--main-font);
   font-weight: 300;
   font-size: 70px;
 }
-.life h2, .promotions h2{
+.life h2,
+.promotions h2 {
   font-family: var(--second-font);
   font-weight: 500;
   font-size: 30px;
@@ -133,44 +131,43 @@
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.buttons{
+.buttons {
   padding-bottom: 50px;
 }
-.image img{
+.image img {
   width: 465px;
   height: 414px;
   border-radius: 10px;
 }
-.lifecol h4{
+.lifecol h4 {
   padding-top: 66px;
   font-size: 35px;
   font-family: var(--main-font);
 }
-.lifecol h5{
+.lifecol h5 {
   font-size: 25px;
   font-family: var(--main-font);
   font-weight: 200;
 }
-.promotionscol img{
+.promotionscol img {
   width: 357px;
   height: 320px;
   border-radius: 10px;
   overflow: hidden;
   max-width: 100%;
-  
 }
 
-.promotionscol img:hover{
+.promotionscol img:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
   width: 357px;
   height: 320px;
   overflow: hidden;
 }
-.promotions{
+.promotions {
   padding-bottom: 200px;
 }
-.promotionscol{
+.promotionscol {
   border-radius: 10px;
   font-family: var(--main-font);
   background-color: var(--blue);
@@ -179,169 +176,147 @@
   padding: 0;
   color: #fff;
 }
-.promotionscol h5{
-
+.promotionscol h5 {
   font-size: 25px;
   font-weight: 100;
   padding: 20px;
   padding-top: 20px;
 }
-.promotionscol a{
+.promotionscol a {
   font-size: 25px;
   font-weight: 200;
   padding: 20px;
   text-decoration: none;
   color: #fff;
-
 }
-.advantages h1{
+.advantages h1 {
   font-family: var(--main-font);
   font-size: 70px;
   font-weight: 300;
   padding-bottom: 100px;
 }
-.advantages-column{
+.advantages-column {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding-bottom: 100px;
 }
-.advantages-column-right h4{
+.advantages-column-right h4 {
   font-weight: 200;
   font-family: var(--main-font);
 }
-.advantages-column-right p{
+.advantages-column-right p {
   font-weight: 200;
   font-family: var(--main-font);
   font-size: 15px;
-  
 }
-.tel{
+.tel {
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.5)
-        ),
-        /* bottom, image */
-        url(../assets/media/telochka.png);
-        background-position: 10%;
-        -webkit-transition: 0.5s;
-
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url(../assets/media/telochka.png);
+  background-position: 10%;
+  -webkit-transition: 0.5s;
 }
-.tel:hover{
+.tel:hover {
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-        /* bottom, image */
-        url(../assets/media/telochka.png);
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */ url(../assets/media/telochka.png);
   transition: 0.5s;
 }
-.tel h5{
+.tel h5 {
   padding-top: 350px;
 }
-.tem{
+.tem {
   background:
-  /* top, transparent black, faked with gradient */
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.5)
-  ),
-  /* bottom, image */
-  url(../assets/media/napitki.jpg);
+  /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url(../assets/media/napitki.jpg);
   scale: 1;
   background-position: 10%;
   -webkit-transition: 0.5s;
 }
-.tem:hover{
+.tem:hover {
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-        /* bottom, image */
-        url(../assets/media/napitki.jpg);
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */ url(../assets/media/napitki.jpg);
   transition: 0.5s;
 }
-.tem h5{
+.tem h5 {
   padding-top: 350px;
 }
 
-.ten{
+.ten {
   background:
-  /* top, transparent black, faked with gradient */
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.5)
-  ),
-  /* bottom, image */
-  url(../assets/media/lechenie.jpg);
+  /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url(../assets/media/lechenie.jpg);
   scale: 1;
   background-position: 10%;
   -webkit-transition: 0.5s;
 }
-.ten:hover{
+.ten:hover {
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-        /* bottom, image */
-        url(../assets/media/lechenie.jpg);
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */ url(../assets/media/lechenie.jpg);
   transition: 0.5s;
 }
-.ten h5{
+.ten h5 {
   padding-top: 350px;
 }
 
-
-.ted{
+.ted {
   background:
-  /* top, transparent black, faked with gradient */
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.5)
-  ),
-  /* bottom, image */
-  url(../assets/media/forchildren.jpg);
+  /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */ url(../assets/media/forchildren.jpg);
   scale: 1;
   background-position: 10%;
   -webkit-transition: 0.5s;
-
 }
-.ted:hover{
+.ted:hover {
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ),
-        /* bottom, image */
-        url(../assets/media/forchildren.jpg);
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */ url(../assets/media/forchildren.jpg);
   transition: 0.5s;
 }
-.ted h5{
+.ted h5 {
   padding-top: 350px;
 }
 
-footer{
+footer {
   background-color: #1b243f;
   padding: 0;
   margin: 0;
 }
-.socials{
+.socials {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.footer-left{
+.footer-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,88 +324,87 @@ footer{
   padding-bottom: 20px;
   gap: 20px;
 }
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-left h4{
+.footer-left h4 {
   color: #fff;
   font-family: var(--second-font);
   font-size: 30px;
 }
-.footer-left h3{
+.footer-left h3 {
   font-size: 30px;
   font-family: var(--second-font);
   color: var(--blue);
 }
-.footer-right h1{
+.footer-right h1 {
   font-size: 40px;
   font-weight: 300;
   color: #fff;
   padding-bottom: 50px;
 }
-.forma{
+.forma {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
-
 }
-.pole1{
+.pole1 {
   padding: 15px;
 }
-.knopka{
+.knopka {
   padding: 15px;
 }
-
-.live-section{
+/* секция проживание */
+.live-section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.live-section h1{
+.live-section h1 {
   font-family: var(--main-font);
   font-size: 40px;
   font-weight: 300;
   padding-bottom: 50px;
 }
-.buttons-container{
+.buttons-container {
   display: flex;
   justify-content: start;
   align-items: center;
   padding-bottom: 50px;
   gap: 10px;
 }
-.live-btn{
+.live-btn {
   font-family: var(--main-font);
   font-size: 15px;
   font-weight: 400;
   border: 1px solid var(--blue);
 }
-.live-btn:hover{
+.live-btn:hover {
   background: var(--blue);
   border: 1px solid var(--blue);
   color: #fff;
   transition: 0.5s;
 }
-.lifecol h5{
+.lifecol h5 {
   padding-bottom: 40px;
 }
-.live h4{
+.live h4 {
   font-weight: 300;
   padding-top: 15px;
 }
-.lifecol span{
+.lifecol span {
   color: #575757af;
   font-weight: 400;
   padding-left: 5px;
 }
-.health-section{
+.health-section {
   background: #c4ffce62;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.med-programms-card{
+.med-programms-card {
   border-radius: 10px;
   font-family: var(--main-font);
   background-color: #fff;
@@ -447,7 +421,7 @@ footer{
   color: black;
   margin-bottom: 200px;
 }
-.med-programms-card p{
+.med-programms-card p {
   font-size: 15px;
   font-weight: 100;
   max-width: 350px;
@@ -455,35 +429,34 @@ footer{
   padding-top: 10px;
 }
 
-.med-programms-card h1{
-
+.med-programms-card h1 {
   font-size: 25px;
   font-weight: 100;
   padding: 20px;
   padding-top: 20px;
 }
-.med-programms-card img{
+.med-programms-card img {
   display: flex;
 
   max-width: 300px;
 }
-.ccc{
+.ccc {
   margin-top: 15px;
   text-align: center;
 }
-.health-section h2{
+.health-section h2 {
   font-family: var(--main-font);
   font-size: 60px;
   font-weight: 300;
 }
-.health-section p:nth-child(2){
+.health-section p:nth-child(2) {
   font-size: 20px;
   font-family: var(--second-font);
   max-width: 600px;
   padding-top: 20px;
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
 }
-.doctor-card{
+.doctor-card {
   display: flex;
   justify-content: start;
   align-items: start;
@@ -495,207 +468,234 @@ footer{
   gap: 10px;
   flex-direction: column;
 }
-.doctor-card h4{
+.doctor-card h4 {
   font-family: var(--second-font);
   font-size: 25px;
-  
 }
-.doctor-card h5{
+.doctor-card h5 {
   font-family: var(--main-font);
   font-size: 18px;
 }
-.doctor-card img{
+.doctor-card img {
   max-width: 230px;
 }
-.our-doctors h1{
-padding-bottom: 50px;
-font-size: 70px;
-font-family: var(--main-font);
-font-weight: 300;
+.our-doctors h1 {
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-family: var(--main-font);
+  font-weight: 300;
 }
-.saz h1{
+.saz h1 {
   font-size: 70px;
   padding-top: 100px;
   padding-bottom: 70px;
   font-weight: 300;
   font-family: var(--main-font);
 }
-.registru{
+.registru {
   padding-top: 100px;
   padding-bottom: 200px;
 }
-.zux{
+.zux {
   margin-bottom: 20px;
 }
-.life Button{
+.life Button {
   padding: 15px;
   background: transparent;
   color: #000;
   font-family: var(--main-font);
 }
-.buttons{
+.buttons {
   gap: 60px;
 }
-.cabinet{
+.cabinet {
   padding-top: 100px;
   padding-bottom: 200px;
 }
-.cabinet h1{
+.cabinet h1 {
   font-family: var(--main-font);
   font-size: 40px;
   font-weight: 300;
 }
-.inform{
+.inform {
   padding-top: 50px;
-
 }
-.inform h2{
+.inform h2 {
   font-size: 30px;
   font-family: var(--main-font);
   font-weight: 500;
 }
-.inform-left h4{
+.inform-left h4 {
   padding-bottom: 20px;
 }
-.inform-left h4:nth-child(1){
+.inform-left h4:nth-child(1) {
   padding-top: 20px;
 }
-.history{
+.history {
   padding-top: 100px;
 }
-.ssds{
+.ssds {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
 }
-.admin{
+.admin {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.admin h1{
+.admin h1 {
   font-family: var(--main-font);
   font-size: 70px;
   font-weight: 300;
 }
-.admin h2{
+.admin h2 {
   font-family: var(--main-font);
   font-size: 50px;
   font-weight: 300;
   padding-top: 50px;
 }
-.dob{
+.dob {
   padding-top: 430px;
   padding-left: 50px;
 }
+.med-programms-top h2 {
+  width: 100%;
+  font-size: 45px;
+}
 
-
-@media(max-width: 768px) {
-  .about{
+@media (max-width: 768px) {
+  .about {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  .about-left{
+  .about-left {
     text-align: center;
   }
-  .about .about-right img{
+  .about .about-right img {
     width: 500px;
     height: 500px;
-    
   }
-  .life{
+  .life {
     text-align: center;
   }
-  .buttons{
+  .buttons {
     text-align: center;
     padding-left: 140px;
   }
-  .promotions{
+  .promotions {
     text-align: center;
   }
-  .promotionsrow{
+  .promotionsrow {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .advantages h1{
+  .advantages h1 {
     text-align: center;
   }
-  .advantages-column{
+  .advantages-column {
     flex-wrap: wrap;
     text-align: center;
   }
-  .advantages-column h4{
+  .advantages-column h4 {
     padding-bottom: 10px;
   }
-  .footer-content{
+  .footer-content {
     flex-wrap: wrap;
     text-align: center;
   }
-  .footer-content .footer-left{
-   padding-left: 240px;
-   padding-bottom: 40px;
-  }
-  .footer-right{
+  .footer-content .footer-left {
+    padding-left: 240px;
     padding-bottom: 40px;
   }
-  .swit:nth-child(5){
+  .footer-right {
+    padding-bottom: 40px;
+  }
+  .swit:nth-child(5) {
     margin-left: 0%;
     margin-top: 20px;
   }
-  .videoTag{
+  /* главная страница */
+  .videoTag {
     height: 1010px;
   }
-  .main-screen-top h1{
+  .main-screen-top h1 {
     font-size: 70px;
   }
-  .main-screen-top p{
+  .main-screen-top p {
     font-size: 20px;
   }
-  .main-screen-buttons{
+  .main-screen-buttons {
     padding-bottom: 300px;
   }
 }
-@media(max-width: 375px) {
-  .main-screen-top h1{
+
+@media (max-width: 375px) {
+  .cabinet {
+    padding-top: 350px;
+  }
+  .history h1 {
+    font-size: 35px;
+  }
+  /* главная страница */
+  .main-screen-top h1 {
     font-size: 40px;
   }
-  .main-screen-top p{
+  .main-screen-top p {
     font-size: 15px;
   }
-  .main-screen-button1, .main-screen-button2{
-    padding:5px;
+  .main-screen-button1,
+  .main-screen-button2 {
+    padding: 5px;
     font-size: 15px;
   }
-  .about .about-right img{
+  .about {
+    padding-top: 350px;
+  }
+  .life {
+    padding-top: 0px;
+  }
+  .about .about-right img {
     width: 300px;
     height: 300px;
     padding-bottom: 0px;
   }
-  .life h1, .advantages h1, .promotions h1{
+  .life h1,
+  .advantages h1,
+  .promotions h1 {
     font-size: 40px;
   }
-  .life h2, .promotions h2{
+  .life h2,
+  .promotions h2 {
     font-size: 20px;
   }
-  .life .buttons{
+  .life .buttons {
     padding-left: 0px;
   }
-  .footer-content .footer-left{
+  .footer-content .footer-left {
     padding-left: 45px;
   }
-  .footer-content .footer-right h1{
+  .footer-content .footer-right h1 {
     font-size: 30px;
   }
-  .main-screen-buttons{
-    padding-top: 70px;
-  }
-  .buttons-container{
-  
-    flex-wrap: wrap;
-  }
-  .videoTag{
-    height: 100%;
+  .main-screen-buttons {
+    padding-top: 40px;
+    padding-bottom: 0px;
   }
 
+  .buttons-container {
+    flex-wrap: wrap;
+  }
+  .videoTag {
+    height: 100%;
+  }
+}
+
+.bron {
+  font-family: var(--main-font);
+}
+.modal-content {
+  color: #0f0d0d;
+  font-weight: 300;
 }

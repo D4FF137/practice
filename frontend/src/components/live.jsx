@@ -1,7 +1,7 @@
-import '../assets/style.css'
-import { Button, Carousel, Row, Col, Modal, Form } from 'react-bootstrap'
+import "../assets/style.css";
+import { Button, Carousel, Row, Col, Modal, Form } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
-import { useState } from 'react';
+import { useState } from "react";
 import photo1 from "../assets/media/slider-photo-1.jpg";
 import photo2 from "../assets/media/slider-photo-2.jpg";
 import photo3 from "../assets/media/slider-photo-3.jpg";
@@ -33,279 +33,276 @@ import photo28 from "../assets/media/slider-photo-28.jpg";
 import photo29 from "../assets/media/slider-photo-29.jpg";
 import photo30 from "../assets/media/slider-photo-30.jpg";
 
-
-const Live = () =>
-
-{
-
+const Live = () => {
   const [show, setShow] = useState(false);
-const handleClose = () => setShow(false);
-const handleCloseAlert = () => {
-  toast.success('Заявка на бронирование успешно отправлена!', {position: "bottom-right", theme:"light"});
-  setShow(false);}
-const handleShow = () => setShow(true)
-  return(
+  const handleClose = () => setShow(false);
+  const handleCloseAlert = () => {
+    toast.success("Заявка на бронирование успешно отправлена!", {
+      position: "bottom-right",
+      theme: "light",
+    });
+    setShow(false);
+  };
+  const handleShow = () => setShow(true);
+  return (
     <>
-
-    <div className="container">
-      <section className='live-section'>
-    <h1>Проживание</h1>
-    <Button onClick={handleShow}variant='primary mb-4'>Забронировать</Button>
-    <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Оформить бронирование</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Ваш Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-              <Form.Label className="pt-3">Ваш номер телефона</Form.Label>
-              <Form.Control type="phone" placeholder="+7...">
-
-              </Form.Control>
-              <Form.Label className="pt-3">Дата заезда</Form.Label>
-              <Form.Control type="date" placeholder="+7...">
-
-              </Form.Control>
-              <Form.Label className="pt-3">Дата съезда</Form.Label>
-              <Form.Control type="date" placeholder="+7...">
-
-              </Form.Control>
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Пожелания по номеру и особенности бронирования</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Закрыть
+      <div className="container">
+        <section className="live-section">
+          <h1>Проживание</h1>
+          <Button onClick={handleShow} variant="primary mb-4">
+            Забронировать
           </Button>
-          <Button variant="primary" onClick={handleCloseAlert}>
-            Отправить
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      {/* <ToastContainer theme='light' position='bottom-right'/> */}
-    <div className="buttons-container">
-      <Button variant='transparent' className='live-btn'>
-        Все
-      </Button>
-      <Button className='live-btn' variant='transparent'>
-        Новые номера
-        </Button>
-        
-        <Button className='live-btn' variant='transparent'>
-          Апартаменты
-          </Button>
-          <Button className='live-btn' variant='transparent'>
-            Эконом
-            </Button><Button className='live-btn' variant='transparent'>
-          Комфорт
+          <Modal className="bron" show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Оформить бронирование</Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="modalcontent">
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Ваш Email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                  <Form.Label className="pt-3">Ваш номер телефона</Form.Label>
+                  <Form.Control type="phone" placeholder="+7..."></Form.Control>
+                  <Form.Label className="pt-3">Дата заезда</Form.Label>
+                  <Form.Control type="date" placeholder="+7..."></Form.Control>
+                  <Form.Label className="pt-3">Дата съезда</Form.Label>
+                  <Form.Control type="date" placeholder="+7..."></Form.Control>
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>
+                    Пожелания по номеру и особенности бронирования
+                  </Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="danger" onClick={handleClose}>
+                Закрыть
+              </Button>
+              <Button variant="success" onClick={handleCloseAlert}>
+                Отправить
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          {/* <ToastContainer theme='light' position='bottom-right'/> */}
+          <div className="buttons-container">
+            <Button variant="transparent" className="live-btn">
+              Все
             </Button>
-    </div>
-    <div className="cards">
+            <Button className="live-btn" variant="transparent">
+              Новые номера
+            </Button>
+
+            <Button className="live-btn" variant="transparent">
+              Апартаменты
+            </Button>
+            <Button className="live-btn" variant="transparent">
+              Эконом
+            </Button>
+            <Button className="live-btn" variant="transparent">
+              Комфорт
+            </Button>
+          </div>
+          <div className="cards">
             <Row>
               <Col className="lifecol live">
                 <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo1} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo2} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo3} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Двухкомнатный делюкс</h4>
-                <h5>от 3 760 Р<span>/ночь</span></h5>
+                <h5>
+                  от 3 760 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo4} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo5} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo6} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Двухместный бизнес</h4>
-                <h5>от 3 760 Р<span>/ночь</span></h5>
+                <h5>
+                  от 3 760 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo7} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo8} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo9} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Трехместный бизнес</h4>
-                <h5>от 3 760 Р<span>/ночь</span></h5>
+                <h5>
+                  от 3 760 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
                 <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo10} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo11} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo12} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Одноместный бизнес</h4>
-                <h5>от 4 800 Р<span>/ночь</span></h5>
+                <h5>
+                  от 4 800 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo13} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo14} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo15} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
-                <h4>Однокомнатный номер<br /> Фэмили</h4>
-                <h5>Все включено от 5 568 Р<span>/ночь</span></h5>
+                <h4>
+                  Однокомнатный номер
+                  <br /> Фэмили
+                </h4>
+                <h5>
+                  Все включено от 5 568 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo16} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo17} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo18} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Делюкс Грин</h4>
-                <h5>от 9 480 Р<span>/ночь</span></h5>
+                <h5>
+                  от 9 480 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
                 <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo19} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo20} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo21} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Вилла Айвазовский</h4>
-                <h5>от 12 480 Р<span>/ночь</span></h5>
+                <h5>
+                  от 12 480 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo22} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo23} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo24} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
                 <h4>Апартаменты с кухней</h4>
-                <h5>от 15 280 Р<span>/ночь</span></h5>
+                <h5>
+                  от 15 280 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo25} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo26} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo27} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
-                <h4>Одноместный номер<br />Эконом</h4>
-                <h5>от 3 760 Р<span>/ночь</span></h5>
+                <h4>
+                  Одноместный номер
+                  <br />
+                  Эконом
+                </h4>
+                <h5>
+                  от 3 760 Р<span>/ночь</span>
+                </h5>
               </Col>
               <Col className="lifecol live">
-              <Carousel>
+                <Carousel>
                   <Carousel.Item className="image">
                     <img src={photo28} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo29} text="First slide" />
-                    
                   </Carousel.Item>
                   <Carousel.Item className="image">
                     <img src={photo30} text="First slide" />
-                   
                   </Carousel.Item>
                 </Carousel>
-                <h4>Одноместный номер<br />Комфорт</h4>
-                <h5>от 3 760 Р<span>/ночь</span></h5>
+                <h4>
+                  Одноместный номер
+                  <br />
+                  Комфорт
+                </h4>
+                <h5>
+                  от 3 760 Р<span>/ночь</span>
+                </h5>
               </Col>
             </Row>
           </div>
-    
-    </section>
-    </div>
-    
+        </section>
+      </div>
     </>
-
-
-
   );
-}
+};
 
 export default Live;
